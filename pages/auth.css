@@ -1,6 +1,6 @@
 @import "../global.css";
 
-.login__content {
+.auth__content {
   max-width: 32rem;
   background: var(--black);
   border-radius: 10px;
