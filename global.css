@@ -1,0 +1,100 @@
+@import url(https://52designs.vercel.app/components/reset.css);
+@import url(https://52designs.vercel.app/components/text-utils.css);
+@import url(https://52designs.vercel.app/components/button.css);
+@import url(https://52designs.vercel.app/components/cards.css);
+@import url(https://52designs.vercel.app/components/input.css);
+@import url(https://52designs.vercel.app/components/spacing.css);
+
+:root {
+  /* --bg-color: #07010a; */
+  --bg-color: #121212;
+  --font-color: #ffffff;
+  --white: #fff;
+  --black: #0d0d0d;
+  --primary: #6f00ed;
+  --secondary: #433df2;
+
+  --primary-light: #9233ff;
+  --primary-extra-light: #9233ff4d;
+
+  --secondary-light: #544ff3;
+  --secondary-extra-light: #544ff360;
+
+  /* color for code snippets */
+  --white-code: #ffffffcc;
+  --blue-code: #12b0e8;
+  --yellow-code: #f4ce2ccc;
+
+  --red: #e21717;
+  --yellow: #ddd101;
+  --green: #3dbe29;
+  --blue: #1d4ed8;
+  --grey: #474747;
+
+  --btn-bg-default: #3b3b3b;
+  --btn-hover-bg-default: #424242;
+
+  --card-bg: #171717;
+  --overlay: rgba(0, 0, 0, 0.5);
+
+  --info: var(--blue-code);
+  --info-bg: #12b0e812;
+  --success: var(--green);
+  --success-bg: #3dbe2919;
+  --warning: var(--yellow);
+  --warning-bg: #ddd10111;
+  --error: #ff0000;
+  --error-bg: #ff00000d;
+
+  /* font-size: 75%; */
+
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg-color);
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
