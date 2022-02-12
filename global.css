@@ -73,6 +73,10 @@ a {
   color: var(--font-color);
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .logo {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
