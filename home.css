@@ -64,6 +64,7 @@
 
 .section--new-arrivals .card {
   cursor: pointer;
+  width: auto;
 }
 
 .section--new-arrivals .card__image {
