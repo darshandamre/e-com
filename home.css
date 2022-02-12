@@ -27,7 +27,7 @@
 }
 
 /******* categories *******/
-.section-categories > .container {
+.section--categories > .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -39,6 +39,7 @@
   width: 13.5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .category__image {
@@ -51,4 +52,24 @@
   text-align: center;
   line-height: 1.5rem;
   background-color: var(--bg-color);
+}
+
+/****** new arrivals ******/
+.section--new-arrivals > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.section--new-arrivals .card {
+  cursor: pointer;
+}
+
+.section--new-arrivals .card__image {
+  max-width: 12.5rem;
+}
+
+.section--new-arrivals .card__content {
+  margin: 0 0 0 2rem;
 }
