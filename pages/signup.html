@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <title>SignUp | 52 shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/">
+          <h1 class="logo">52 shop</h1>
+        </a>
+
+        <div class="header__actions">
+          <a href="#" class="btn btn--icon m-0"
+            ><i class="fa-regular fa-heart"></i
+          ></a>
+          <a href="#" class="btn btn--link m-0"
+            ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+          >
+          <a href="#" class="btn btn--primary m-0">SignUp</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="login">
+      <div class="container">
+        <div class="login__content mx-auto p-6">
+          <h2 class="h2 ta-center mt-0">SignUp</h2>
+          <label class="text-base" for="email">Email</label>
+          <input
+            class="input width-100 mb-3"
+            id="email"
+            type="email"
+            placeholder="name@example.com"
+          />
+          <label class="text-base" for="Password">Password</label>
+          <input
+            class="input width-100 mb-3"
+            id="Password"
+            type="Password"
+            placeholder="***********"
+          />
+          <div class="input-checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me" class="ml-1"
+              >I accept all Terms & Conditions</label
+            >
+          </div>
+          <div class="my-3">
+            <button class="btn btn--primary width-100 mx-0">
+              Create New Account
+            </button>
+          </div>
+          <p class="ta-center">
+            <a href="#" class="btn btn--link"
+              >Already have an account
+              <i class="fa-solid fa-greater-than ml-1"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/4294495d3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
