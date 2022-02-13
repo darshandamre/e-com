@@ -18,6 +18,7 @@
 
 .cart__details {
   background: var(--card-bg);
+  border-radius: 5px;
 }
 
 .cart__details__title {
