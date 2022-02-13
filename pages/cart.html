@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Cart | 52 shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/">
+          <h1 class="logo">52 shop</h1>
+        </a>
+
+        <div class="header__actions flex">
+          <a href="#" class="btn btn--icon m-0"
+            ><i class="fa-regular fa-heart"></i
+          ></a>
+          <a href="#" class="btn btn--link m-0"
+            ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+          >
+          <a href="/pages/signup.html" class="btn btn--primary m-0">SignUp</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="cart">
+      <div class="container">
+        <h3 class="h3 ta-center mb-6">Cart (1)</h3>
+
+        <div class="cart__content">
+          <div class="card card--horizontal">
+            <img
+              class="card__image"
+              src="../assests/category-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                ₹ 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <p>
+                Quantity: <i class="px-1 fa-solid fa-circle-minus"></i>
+                1
+                <i class="px-1 fa-solid fa-circle-plus"></i>
+              </p>
+              <button class="btn">Remove from Cart</button>
+              <button class="btn card__btn--outline">Move to wishlist</button>
+            </div>
+          </div>
+
+          <div class="cart__details p-6">
+            <p class="cart__details__title fw-600">PRICE DETAILS</p>
+            <ul class="cart__list">
+              <li class="cart__item">
+                Price (2 items) <span>&#8377; 1999</span>
+              </li>
+              <li class="cart__item">Discount <span>- &#8377; 1000</span></li>
+              <li class="cart__item">
+                Delivery Charges <span>&#8377; 300</span>
+              </li>
+              <li class="cart__item fw-600">
+                TOTAL AMOUNT <span>&#8377; 2299</span>
+              </li>
+            </ul>
+            <p class="pb-3">You will save &#8377; 1000 on this order</p>
+            <button class="btn btn--primary width-100 m-0">PLACE ORDER</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/4294495d3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
