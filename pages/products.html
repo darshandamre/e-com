@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="wishlist.css" />
-    <title>Wishlist | 52 shop</title>
+    <link rel="stylesheet" href="products.css" />
+    <title>Products | 52 shop</title>
   </head>
   <body>
     <header class="header">
@@ -32,12 +32,114 @@
       </div>
     </header>
 
-    <main class="wishlist mb-8">
-      <h3 class="h3 ta-center mt-3 mb-6">Wishlist</h3>
+    <aside class="filters px-4 pt-4">
+      <div class="filter__header">
+        <h3 class="text-md m-0">Filter</h3>
+        <button class="btn btn--link">Clear All</button>
+      </div>
+
+      <section class="my-3">
+        <p class="text-md mb-1">Price</p>
+        <label class="price-range" for="price-range">
+          <span>100</span>
+          <span>1000</span>
+        </label>
+        <input class="width-100" type="range" id="price-range" />
+      </section>
+
+      <section class="my-3">
+        <h4 class="text-md mb-1">Category</h4>
+        <ul>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="category-cards" />
+            <label for="category-cards">Cards</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="category-uncut-sheets" />
+            <label for="category-uncut-sheets"> Uncut sheets</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="category-accessories" />
+            <label for="category-accessories"> Accessories</label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="my-3">
+        <h4 class="text-md mb-1">Brands</h4>
+        <ul>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="brand-virtuoso" />
+            <label for="brand-virtuoso"> Virtuoso</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="brand-nocs" />
+            <label for="brand-nocs"> NOCs</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="brand-1st" />
+            <label for="brand-1st"> 1st</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="checkbox" id="brand-fontaine" />
+            <label for="brand-fontaine"> Fontaine</label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="my-3">
+        <h4 class="text-md mb-1">Rating</h4>
+        <ul>
+          <li class="my-1">
+            <input class="mr-1" type="radio" name="rating" id="rating-4" />
+            <label for="rating-4"> 4 stars & above</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="radio" name="rating" id="rating-3" />
+            <label for="rating-3"> 3 stars & above</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="radio" name="rating" id="rating-2" />
+            <label for="rating-2"> 2 stars & above</label>
+          </li>
+          <li class="my-1">
+            <input class="mr-1" type="radio" name="rating" id="rating-1" />
+            <label for="rating-1"> 1 stars & above</label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="my-3">
+        <h4 class="text-md mb-1">Sort By</h4>
+        <ul>
+          <li class="my-1">
+            <input
+              class="mr-1"
+              type="radio"
+              name="price-sort"
+              id="price-low-to-high"
+            />
+            <label for="price-low-to-high"> Price - low to high</label>
+          </li>
+          <li class="my-1">
+            <input
+              class="mr-1"
+              type="radio"
+              name="price-sort"
+              id="price-high-to-low"
+            />
+            <label for="price-high-to-low"> Price - high to low</label>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="products mb-8">
+      <h3 class="h3 ta-center mt-3 mb-6">Showing All Products</h3>
       <div class="container">
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"
@@ -67,7 +169,7 @@
         </div>
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"
@@ -97,7 +199,7 @@
         </div>
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"
@@ -112,7 +214,7 @@
         </div>
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"
@@ -127,7 +229,7 @@
         </div>
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"
@@ -142,7 +244,7 @@
         </div>
         <div class="card">
           <div class="card__fav">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
           <img
             class="card__image"

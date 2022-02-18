@@ -1,0 +1,65 @@
+@import "../global.css";
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "filters products";
+  grid-template-columns: 18rem 1fr;
+}
+
+.header {
+  grid-area: header;
+}
+
+.filters {
+  grid-area: filters;
+  background-color: var(--card-bg);
+  position: sticky;
+  top: 5.5rem;
+  bottom: 0;
+  height: calc(100vh - 5.5rem);
+  overflow-y: auto;
+}
+
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products {
+  grid-area: products;
+  min-width: 0;
+}
+
+.products > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+}
+
+.products .card__image {
+  width: 100%;
+}
+
+.products .card__fav {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--red);
+  background: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
