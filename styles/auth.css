@@ -1,4 +1,4 @@
-@import "../global.css";
+@import "./global.css";
 
 .auth__content {
   max-width: 32rem;
